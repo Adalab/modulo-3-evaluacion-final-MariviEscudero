@@ -1,0 +1,57 @@
+@import 'core/variables';
+@import 'core/reset';
+.page {
+  height: 100vh;
+  background-image: url('../images/rick-y-morty-fanart-2020_3840x2160_xtrafondos.com.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  text-align: center;
+  height: 30vh;
+  &__image {
+    width: 217px;
+    height: 70px;
+    margin: 10px;
+  }
+}
+.main {
+  height: 70vh;
+  color: $linenwhite;
+  font-family: $mainfont;
+
+  &__form {
+    text-align: center;
+    &--input {
+      font-family: $mainfont;
+      font-size: 14px;
+      background-color: $graphiteblack;
+      color: $linenwhite;
+      border: 1px solid $bluemorty;
+    }
+  }
+  &__section--list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  &__section--list__item {
+    background-color: $bluemorty;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &--image {
+      width: 200px;
+      height: 200px;
+    }
+    &--name {
+      font-size: 18px;
+      margin: 5px;
+    }
+  }
+}
