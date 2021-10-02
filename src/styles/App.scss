@@ -15,12 +15,6 @@
     height: 70px;
     margin: 10px;
   }
-}
-.main {
-  height: 70vh;
-  color: $linenwhite;
-  font-family: $mainfont;
-
   &__form {
     text-align: center;
     &--input {
@@ -28,9 +22,17 @@
       font-size: 14px;
       background-color: $graphiteblack;
       color: $linenwhite;
-      border: 1px solid $bluemorty;
+      border: 2px solid $bluemorty;
+      width: 250px;
     }
   }
+}
+.main {
+  height: 70vh;
+  color: $linenwhite;
+  font-family: $mainfont;
+
+  
   &__section--list{
     display: flex;
     flex-direction: row;
