@@ -8,8 +8,8 @@ const CharactersList = (props) => {
         return -1;
       }
     })
-    .map((characterData, index) => (
-      <li key={index} className="main__section--list__item">
+    .map((characterData) => (
+      <li key={props.data.id} className="main__section--list__item">
         <CharacterItem 
           characterData={characterData}/>
       </li>

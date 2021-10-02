@@ -25,6 +25,8 @@ const App = () => {
     setSearchNameInput(ev.target.value);
   };
 
+  const filteredCharacter = characters.filter((character)=> character.name.toLocaleLowerCase().includes(searchNameInput.toLocaleLowerCase()));
+
   return (
     <div className="page">
       <header className="header">
@@ -42,7 +44,7 @@ const App = () => {
       </header>
       <main className="main">
         <section className="main__section">
-          <CharactersList data={characters} />
+          <CharactersList data={filteredCharacter} />
         </section>
       </main>
       <footer></footer>
