@@ -16,7 +16,6 @@
     height: 70px;
     margin: 10px;
   }
-  
 }
 .main {
   height: 70vh;
@@ -34,7 +33,7 @@
       width: 250px;
     }
   }
-  &__section--list{
+  &__section--list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -42,11 +41,11 @@
 
     &__item {
       background-color: $graphiteblack;
-      border: 2px outset $bluemorty ;
+      border: 2px outset $bluemorty;
       border-radius: 10px;
       margin: 10px;
       padding: 10px;
-      display: flex; 
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -58,39 +57,47 @@
         font-size: 18px;
         margin: 5px;
       }
-     
     }
-    
   }
-  
-  &__errorpage{
+
+  &__errorpage {
+    width: 200px;
+    height: 270px;
+    padding: 5px;
     background-color: $graphiteblack;
-    border: 2px outset $bluemorty ;
+    background-image: url('../images/137b540a18c16c296b995a908ef6bb1c.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px outset $bluemorty;
     border-radius: 10px;
     margin: 50px;
-    font-size: 20px;
+    font-size: 14px;
     color: $greenrick;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    
   }
 }
-.main__section--detail{
+.main__section--detail {
   background-color: $graphiteblack;
   color: $greenrick;
-  border: 2px outset $bluemorty ;
+  border: 2px outset $bluemorty;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  .icon{
+  .icon {
     color: $bluemorty;
     position: relative;
     transform: translateX(110px);
   }
-
 }
-.footer{
+
+.footer {
   margin-left: 10px;
   height: 10vh;
   font-size: 14px;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, Link, useRouteMatch } from 'react-router-dom';
+import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import getCharactersFromApi from '../services/charactersApi';
 import ls from '../services/ls';
 import headerLogo from '../images/Rick_and_Morty_-_logo_(English).png';
@@ -7,6 +7,7 @@ import '../styles/App.scss';
 import CharactersList from './CharactersList';
 import CharacterFilter from './CharacterFilter';
 import CharacterDetail from './CharacterDetail';
+import PageError from './PageError';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
@@ -64,20 +65,12 @@ const App = () => {
           </main>
         </Route>
         <Route>
-          <section className="main__errorpage">
-            <p>
-              Malditos agujeros espacio-temporales! la página que buscas no
-              existe en este universo...Prueba con otra dirección o ve a inicio
-              <Link to='/'>
-              <span> aquí</span> 
-              </Link>
-            </p>
-          </section>
+         <PageError/>
         </Route>
       </Switch>
       <footer className="footer">
         <p>&copy; Marivi Escudero</p>
-        <p>Specie: baby Front-endian &#128125;</p>
+        <p>&#128125;Baby Front-endian</p>
       </footer>
     </div>
   );

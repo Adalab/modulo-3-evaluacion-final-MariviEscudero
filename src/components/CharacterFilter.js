@@ -1,5 +1,6 @@
 const CharacterFilter = (props) =>{
     const filterCharacter = (ev)=>{
+      ev.preventDefault();
         props.handleSearchInput(ev.currentTarget.value)
     }
     return(
