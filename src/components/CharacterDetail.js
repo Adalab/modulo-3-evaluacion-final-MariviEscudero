@@ -1,6 +1,11 @@
+import { Link } from 'react-router-dom';
 const CharacterDetail = (props) => {
   return (
     <section className="main__section--detail">
+      <Link to='/'>
+        <i class="fas fa-backspace icon"></i>
+      </Link>
+
       <img
         className="main__section--detail__image"
         src={props.detailData.image}

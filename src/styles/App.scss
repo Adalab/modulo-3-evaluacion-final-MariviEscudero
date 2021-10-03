@@ -60,6 +60,7 @@
       }
      
     }
+    
   }
   
   &__errorpage{
@@ -70,6 +71,24 @@
     font-size: 20px;
     color: $greenrick;
   }
+}
+.main__section--detail{
+  background-color: $graphiteblack;
+  color: $greenrick;
+  border: 2px outset $bluemorty ;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .icon{
+    color: $bluemorty;
+    position: relative;
+    transform: translateX(110px);
+  }
+
 }
 .footer{
   margin-left: 10px;
