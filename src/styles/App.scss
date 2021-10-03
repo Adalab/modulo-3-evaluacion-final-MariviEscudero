@@ -1,6 +1,7 @@
 @import 'core/variables';
 @import 'core/reset';
 .page {
+  font-family: $mainfont;
   height: 100vh;
   background-image: url('../images/rick-y-morty-fanart-2020_3840x2160_xtrafondos.com.jpg');
   background-position: center;
@@ -9,12 +10,19 @@
 }
 .header {
   text-align: center;
-  height: 30vh;
+  height: 20vh;
   &__image {
     width: 217px;
     height: 70px;
     margin: 10px;
   }
+  
+}
+.main {
+  height: 70vh;
+  font-weight: 600;
+  color: $bluemorty;
+  text-shadow: 1px 1px 1px $greenrick;
   &__form {
     text-align: center;
     &--input {
@@ -26,34 +34,51 @@
       width: 250px;
     }
   }
-}
-.main {
-  height: 70vh;
-  color: $linenwhite;
-  font-family: $mainfont;
-
-  
   &__section--list{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
-  }
-  &__section--list__item {
-    background-color: $bluemorty;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &--image {
-      width: 200px;
-      height: 200px;
+
+    &__item {
+      background-color: $graphiteblack;
+      border: 2px outset $bluemorty ;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 10px;
+      display: flex; 
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &--image {
+        width: 200px;
+        height: 200px;
+      }
+      &--name {
+        font-size: 18px;
+        margin: 5px;
+      }
+     
     }
-    &--name {
-      font-size: 18px;
-      margin: 5px;
-    }
   }
+  
+  &__errorpage{
+    background-color: $graphiteblack;
+    border: 2px outset $bluemorty ;
+    border-radius: 10px;
+    margin: 50px;
+    font-size: 20px;
+    color: $greenrick;
+  }
+}
+.footer{
+  margin-left: 10px;
+  height: 10vh;
+  font-size: 14px;
+  font-weight: 500;
+  color: $greenrick;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }

@@ -1,6 +1,9 @@
+import {Link} from 'react-router-dom';
 const CharacterItem = (props) => {
+  
   return (
     <>
+    <Link to={`/characterDetail/${props.characterData.id}`}>
       <img
         className="main__section--list__item--image"
         src={props.characterData.image}
@@ -12,6 +15,7 @@ const CharacterItem = (props) => {
       <p className="main__section--list__item--specie">
         Especie: {props.characterData.specie}
       </p>
+      </Link>
     </>
   );
 };

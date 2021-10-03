@@ -1,5 +1,5 @@
 function getCharactersFromApi() {
-  return fetch(`https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-y-morty.json`)
+  return fetch(`https://rickandmortyapi.com/api/character `)
   .then(response => response.json())
   .then(json => {
     return json.results.map(character => {
@@ -8,7 +8,9 @@ function getCharactersFromApi() {
         name: character.name,
         status: character.status,
         specie: character.species,
+        origin: character.origin.name,
         image: character.image,
+        episodes: character.episode.length,
       };
     })
 
