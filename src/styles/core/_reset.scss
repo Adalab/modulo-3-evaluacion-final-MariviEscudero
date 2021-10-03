@@ -106,6 +106,13 @@ section {
   display: block;
 }
 
+a,
+Link{
+  text-decoration: none;
+  color: transparent;
+  
+}
+
 body {
   line-height: 1;
 }

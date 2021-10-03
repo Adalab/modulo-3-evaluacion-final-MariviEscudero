@@ -3,7 +3,7 @@ const CharacterDetail = (props) => {
   return (
     <section className="main__section--detail">
       <Link to='/'>
-        <i class="fas fa-backspace icon"></i>
+        <i className="fas fa-backspace icon"></i>
       </Link>
 
       <img

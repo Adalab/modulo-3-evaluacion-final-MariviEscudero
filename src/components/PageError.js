@@ -1,5 +1,4 @@
 import {Link} from 'react-router-dom';
-import errorImage from '../images/137b540a18c16c296b995a908ef6bb1c.jpg'
 const PageError = (props)=>{
 return(
     <section className="main__errorpage">
