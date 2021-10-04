@@ -11,7 +11,7 @@ const CharacterFilter = (props) =>{
             className="main__form--input"
             type="text"
             placeholder="Buscar personaje"
-            value={props.inputValue}
+            value={props.value}
             onChange={filterCharacter}
           />
         </div>

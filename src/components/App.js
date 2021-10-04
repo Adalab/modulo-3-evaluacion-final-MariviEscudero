@@ -54,7 +54,8 @@ const App = () => {
               <Filters
               handleSearchInput={handleSearchInput}
               handleSearchSpecie={handleSearchSpecie}
-              value={searchNameInput}
+              inputValue={searchNameInput}
+              selectValue={searchSpecie}
               />
             </section>
             <section className="main__section">

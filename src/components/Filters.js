@@ -7,10 +7,11 @@ const Filters = (props) => {
     <form className="main__form" action="">
       <FilterByName
         handleSearchInput={props.handleSearchInput}
-        inputValue={props.value}
+        value={props.inputValue}
       />
       <FilterBySpecie
         handleSearchSpecie={props.handleSearchSpecie}
+        value={props.selectValue}
       />
     </form>
   );

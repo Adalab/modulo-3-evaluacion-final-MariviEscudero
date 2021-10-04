@@ -13,7 +13,7 @@ function FilterBySpecie(props) {
           className="main__form--select"
           name="specie"
           id="specie"
-          value={props.searchSpecie}
+          value={props.value}
           onChange={handleSearchSpecie}
         >
           <option value='all'>Todos</option>
