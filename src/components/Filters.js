@@ -7,6 +7,7 @@ const Filters = (props) => {
     <form className="main__form" action="">
       <FilterByName
         handleSearchInput={props.handleSearchInput}
+        inputValue={props.value}
       />
       <FilterBySpecie
         handleSearchSpecie={props.handleSearchSpecie}
