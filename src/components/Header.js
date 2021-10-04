@@ -1,3 +1,4 @@
+import '../styles/Header.scss';
 import headerLogo from '../images/Rick_and_Morty_-_logo_(English).png';
 const Header = () => {
   return (

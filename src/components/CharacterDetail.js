@@ -12,15 +12,15 @@ const CharacterDetail = (props) => {
       <Link to="/">
         <i class="fas fa-times-circle icon"></i>
       </Link>
-      <h2 className="main__section--detail__name">{props.detailData.name}</h2>
+     
       <img
         className="main__section--detail__image"
         src={props.detailData.image}
         alt={props.detailData.name}
       />
 
-      <ul>
-       
+      <ul className="main__section--detail__list">
+      <li className="main__section--detail__name">{props.detailData.name}</li>
         <li className="main__section--detail__data">
           Especie: {props.detailData.specie}
         </li>
