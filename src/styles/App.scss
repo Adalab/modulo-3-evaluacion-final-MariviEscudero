@@ -8,8 +8,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-//-----------------------------Header
-
 
 //-------------------------main
 .main {
@@ -71,27 +69,7 @@
   margin: 5px;
 }
 //-----------------------------------------PageError
-.main__errorpage {
-  width: 200px;
-  height: 270px;
-  padding: 5px;
-  background-color: $graphiteblack;
-  background-image: url('../images/137b540a18c16c296b995a908ef6bb1c.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 2px outset $bluemorty;
-  border-radius: 10px;
-  margin: 70px auto 50px auto;
-  font-size: 14px;
-  color: $greenrick;
-  text-align: center;
-  display: flex;
-  align-items: flex-start;
-  &--span {
-    font-size: 14px;
-    color: $bluemorty;
-  }
-}
+
 //-----------------------
 .main__section--detail {
   background-color: $graphiteblack;

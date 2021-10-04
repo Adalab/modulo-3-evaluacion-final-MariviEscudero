@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import '../styles/PageError.scss';
 const PageError = (props)=>{
 return(
     <section className="main__errorpage">
