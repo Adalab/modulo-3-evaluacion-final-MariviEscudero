@@ -4,8 +4,8 @@ const CharacterFilter = (props) =>{
         props.handleSearchInput(ev.currentTarget.value)
     }
     return(
-        <form className="main__form" action="">
-          <label className="main__form--label" htmlFor=""></label>
+       <div>
+          <label className="main__form--label" htmlFor="name">Nombre</label>
           <input
             className="main__form--input"
             type="text"
@@ -13,7 +13,7 @@ const CharacterFilter = (props) =>{
             value={props.value}
             onChange={filterCharacter}
           />
-        </form>
+        </div>
     );
 }
 export default CharacterFilter;

@@ -6,7 +6,7 @@ return(
       Malditos agujeros espacio-temporales! la página que buscas no
       existe en este universo...Prueba con otra dirección o ve a inicio
       <Link to='/'>
-      <span> aquí</span> 
+      <span className="main__errorpage--span"> aquí</span>
       </Link>
     </p>
   </section>

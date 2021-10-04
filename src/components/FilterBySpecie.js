@@ -4,14 +4,13 @@ function FilterBySpecie(props) {
     }
    
     return (
-      <>
-        <label className='form__label display-block' htmlFor='gender'>
-          Especie:
-        </label>
+      <div className="display">
+        <label className="main__form--label" htmlFor="specie">
+          Especie </label>
         <select
-          className='form__input-text'
-          name='gender'
-          id='gender'
+          className="main__form--input"
+          name="specie"
+          id="specie"
           value={props.searchSpecie}
           onChange={handleSearchSpecie}
         >
@@ -19,7 +18,7 @@ function FilterBySpecie(props) {
           <option value='Human'>Humano</option>
           <option value='Alien'>Alien</option>
         </select>
-      </>
+      </div>
     );
   }
   

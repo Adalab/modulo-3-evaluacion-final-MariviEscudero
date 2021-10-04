@@ -3,7 +3,7 @@ const Footer = () => {
     <>
       <footer className="footer">
         <p>&copy; Marivi Escudero</p>
-        <p>&#128125;Baby Front-endian</p>
+        <p>&#128126;Baby Front-endian</p>
       </footer>
     </>
   );
