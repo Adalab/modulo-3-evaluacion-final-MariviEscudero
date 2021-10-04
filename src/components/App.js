@@ -1,19 +1,18 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import getCharactersFromApi from '../services/charactersApi';
-
 import '../styles/App.scss';
 import CharactersList from './CharactersList';
-import CharacterFilter from './CharacterFilter';
 import CharacterDetail from './CharacterDetail';
 import PageError from './PageError';
 import Footer from './Footer';
 import Header from './Header';
+import Filters from './Filters';
 
 const App = () => {
   const [characters, setCharacters] = useState([]);
   const [searchNameInput, setSearchNameInput] = useState('');
-
+  const [searchSpecie, setSearchSpecie] = useState('all');
   useEffect(() => {
     getCharactersFromApi().then((initialData) => {
       setCharacters(initialData);
@@ -27,21 +26,24 @@ const App = () => {
   const selectedCharacter = characters.find(
     (character) => parseInt(character.id) === parseInt(characterId)
   );
-  console.log(selectedCharacter);
-
   const handleSearchInput = (value) => {
     setSearchNameInput(value);
   };
-
-  const filteredCharacter = characters.filter((character) =>
-    character.name
-      .toLocaleLowerCase()
-      .includes(searchNameInput.toLocaleLowerCase())
-  );
+  const handleSearchSpecie = (value) => {
+    setSearchSpecie(value);
+  };
+ 
+  const filteredCharacter = characters
+    .filter((character) =>
+    character.name.toLocaleLowerCase().includes(searchNameInput.toLocaleLowerCase())
+    )
+    .filter(
+      (character) => searchSpecie === 'all' || character.specie === searchSpecie
+    );
 
   return (
     <div className="page">
-     <Header/>
+      <Header />
       <Switch>
         <Route path="/characterDetail/:id">
           <CharacterDetail detailData={selectedCharacter} />
@@ -49,9 +51,9 @@ const App = () => {
         <Route exact path="/">
           <main className="main">
             <section>
-              <CharacterFilter
-                value={searchNameInput}
-                handleSearchInput={handleSearchInput}
+              <Filters
+              handleSearchInput={handleSearchInput}
+              handleSearchSpecie={handleSearchSpecie}
               />
             </section>
             <section className="main__section">
@@ -63,7 +65,7 @@ const App = () => {
           <PageError />
         </Route>
       </Switch>
-     <Footer/>
+      <Footer />
     </div>
   );
 };
