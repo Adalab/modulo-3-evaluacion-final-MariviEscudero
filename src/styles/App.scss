@@ -112,11 +112,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 70vh;
   .icon {
     color: $bluemorty;
     position: relative;
-    transform: translateX(110px);
+    transform: translateX(120px);
   }
+  .main__section--detail__image{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  .main__section--detail__data{
+    margin: 5px;
+  }
+  
 }
 
 .footer {
