@@ -1,16 +1,15 @@
 @import 'core/reset';
 .header {
-    text-align: center;
-    height: 15vh;
-  }
-  .header__image {
-    width: 217px;
-    height: 70px;
+  text-align: center;
+  min-height: 15vh;
+}
+.header__image {
+  width: 217px;
+  height: 70px;
+  margin: 10px;
+  @media all and (min-width: 1024px) {
+    width: 315px;
+    height: 100px;
     margin: 10px;
-    @media all and (min-width: 1024px){
-      width: 260px ;
-    height: 84px;
-    margin: 10px;
-    }
   }
-  
+}

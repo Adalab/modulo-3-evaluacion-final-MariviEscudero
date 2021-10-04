@@ -2,43 +2,44 @@
 @import 'core/reset';
 
 .main__errorpage {
-    width: 200px;
-    height: 270px;
-    padding: 5px;
-    background-color: $graphiteblack;
-    background-image: url('../images/137b540a18c16c296b995a908ef6bb1c.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 2px outset $bluemorty;
-    border-radius: 10px;
-   
-    font-size: 14px;
-    color: $greenrick;
-    text-align: center;
-    display: flex;
-    align-items: flex-start;
+  width: 200px;
+  height: 270px;
+  padding: 5px;
+  margin: 50px auto 70px auto;
+  background-color: $graphiteblack;
+  background-image: url('../images/137b540a18c16c296b995a908ef6bb1c.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 2px outset $bluemorty;
+  border-radius: 10px;
 
-    @media all and (min-width: 768px){
-        margin: 30px auto 10px auto;
-       width: 300px;
-       height: 350px;
-       padding-top: 20px;
-       font-size: 18px;
+  font-size: 14px;
+  color: $greenrick;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+
+  @media all and (min-width: 768px) {
+    margin: 10px auto 0px auto;
+    width: 330px;
+    height: 400px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  @media all and (min-width: 1024px) {
+    margin: 10px auto 46px auto;
+    width: 380px;
+    height: 480px;
+    font-size: 20px;
+  }
+  .main__errorpage--span {
+    font-size: 14px;
+    color: $bluemorty;
+    @media all and (min-width: 768px) {
+      font-size: 18px;
     }
-    @media all and (min-width: 1024px){
-       margin-bottom: 150px;
-       font-size: 20px;
-      
+    @media all and (min-width: 1024px) {
+      font-size: 20px;
     }
-    .main__errorpage--span {
-        font-size: 14px;
-        color: $bluemorty;
-        @media all and (min-width: 768px){
-           font-size: 18px;
-        }
-        @media all and (min-width: 1024px){
-            font-size: 20px;
-         }
-    }    
-    
-} 
+  }
+}

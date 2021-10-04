@@ -1,0 +1,20 @@
+@import 'core/variables';
+@import 'core/reset';
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $graphiteblack;
+  border: 1px solid $bluemorty;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

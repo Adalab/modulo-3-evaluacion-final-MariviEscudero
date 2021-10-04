@@ -1,0 +1,23 @@
+@import 'core/variables';
+@import 'core/reset';
+.main__section--list__item {
+    background-color: $graphiteblack;
+    border: 2px outset $bluemorty;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .main__section--list__item--image {
+    width: 200px;
+    height: 200px;
+  }
+  .main__section--list__item--name {
+    font-size: 18px;
+    margin: 5px;
+  }

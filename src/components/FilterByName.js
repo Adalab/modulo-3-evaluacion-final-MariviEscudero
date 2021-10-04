@@ -1,3 +1,4 @@
+import '../styles/FilterByName.scss';
 const CharacterFilter = (props) =>{
     const filterCharacter = (ev)=>{
       ev.preventDefault();

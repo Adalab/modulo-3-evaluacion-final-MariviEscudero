@@ -1,3 +1,5 @@
+import '../styles/FilterBySpecie.scss';
+
 function FilterBySpecie(props) {
     const handleSearchSpecie = (ev)=>{
         props.handleSearchSpecie(ev.target.value);
@@ -8,7 +10,7 @@ function FilterBySpecie(props) {
         <label className="main__form--label" htmlFor="specie">
           Especie </label>
         <select
-          className="main__form--input"
+          className="main__form--select"
           name="specie"
           id="specie"
           value={props.searchSpecie}

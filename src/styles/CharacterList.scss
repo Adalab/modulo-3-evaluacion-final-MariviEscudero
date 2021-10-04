@@ -1,0 +1,13 @@
+@import 'core/variables';
+@import 'core/reset';
+.main__section--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  @media all and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+  }
+}

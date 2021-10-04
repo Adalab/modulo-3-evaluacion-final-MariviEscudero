@@ -1,3 +1,4 @@
+import '../styles/CharacterList.scss';
 import CharacterItem from './CharacterItem';
 const CharactersList = (props) => {
   const character = props.data
