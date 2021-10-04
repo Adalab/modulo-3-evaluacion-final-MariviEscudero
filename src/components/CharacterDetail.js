@@ -19,7 +19,7 @@ const CharacterDetail = (props) => {
   return (
     <section className="main__section--detail">
       <Link to="/">
-        <i class="fas fa-times-circle icon"></i>
+        <i className="fas fa-times-circle icon"></i>
       </Link>
 
       <img
