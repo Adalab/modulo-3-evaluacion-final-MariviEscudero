@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e12024b4.chunk.css",
+    "main.js": "./static/js/main.af672ab2.chunk.js",
+    "main.js.map": "./static/js/main.af672ab2.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7ad783a2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7ad783a2.js.map",
+    "static/js/2.3f6e8757.chunk.js": "./static/js/2.3f6e8757.chunk.js",
+    "static/js/2.3f6e8757.chunk.js.map": "./static/js/2.3f6e8757.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.e12024b4.chunk.css.map": "./static/css/main.e12024b4.chunk.css.map",
+    "static/js/2.3f6e8757.chunk.js.LICENSE.txt": "./static/js/2.3f6e8757.chunk.js.LICENSE.txt",
+    "static/media/PageError.scss": "./static/media/137b540a18c16c296b995a908ef6bb1c.4e02b9ed.jpg",
+    "static/media/Rick_and_Morty_-_logo_(English).de13d484.png": "./static/media/Rick_and_Morty_-_logo_(English).de13d484.png",
+    "static/media/App.scss": "./static/media/rick-y-morty-fanart-2020_3840x2160_xtrafondos.com.d48d6536.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ad783a2.js",
+    "static/js/2.3f6e8757.chunk.js",
+    "static/css/main.e12024b4.chunk.css",
+    "static/js/main.af672ab2.chunk.js"
+  ]
+}
