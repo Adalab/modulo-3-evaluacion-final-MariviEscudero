@@ -27,7 +27,7 @@ const App = () => {
   //router ruta detaildata
 
   const routeData = useRouteMatch('/characterDetail/:id');
-  const characterId = routeData !== null ? routeData.params.id : '';
+  const characterId = routeData !== null ? routeData.params.id : <PageError />;
 
   const selectedCharacter = characters.find(
     (character) => parseInt(character.id) === parseInt(characterId)
