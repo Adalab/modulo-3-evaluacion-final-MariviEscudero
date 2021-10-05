@@ -11,12 +11,14 @@ const CharactersList = (props) => {
     })
     .map((characterData) => (
       <li key={characterData.id} className="main__section--list__item">
-        <CharacterItem 
-          characterData={characterData}/>
+        <CharacterItem characterData={characterData} />
       </li>
     ));
-    
 
-  return <ul className="main__section--list">{character}</ul>;
+  if (character.length) {
+    return <ul className="main__section--list">{character}</ul>;
+  } else {
+    return <p className="main__section--charactererror">el personaje que buscas no existe</p>;
+  }
 };
 export default CharactersList;

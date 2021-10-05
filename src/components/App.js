@@ -20,7 +20,6 @@ const App = () => {
   }, []);
 
   const routeData = useRouteMatch('/characterDetail/:id');
-  console.log(routeData);
   const characterId = routeData !== null ? routeData.params.id : '';
 
   const selectedCharacter = characters.find(
