@@ -18,7 +18,7 @@ const CharactersList = (props) => {
   if (character.length) {
     return <ul className="main__section--list">{character}</ul>;
   } else {
-    return <p className="main__section--charactererror">el personaje que buscas no existe</p>;
+    return <p className="main__section--charactererror">Personaje no encontrado en esta dimensión...</p>;
   }
 };
 export default CharactersList;
