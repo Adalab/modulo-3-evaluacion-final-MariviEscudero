@@ -8,7 +8,7 @@ const Filters = (props) => {
       <FilterByName
         className={'main__form--input'}
         name={"name"}
-        id={'name'}
+        id={"name"}
         placeHolder={'buscar personaje'}
         value={props.inputValue}
         handleSearchInput={props.handleSearchInput}
