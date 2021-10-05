@@ -10,7 +10,6 @@ import Header from './Header';
 import Filters from './Filters';
 
 const App = () => {
-
   //variables de estado
 
   const [characters, setCharacters] = useState([]);
@@ -46,11 +45,13 @@ const App = () => {
     setSearchSpecie(value);
   };
 
- //filtros
+  //filtros
 
   const filteredCharacter = characters
     .filter((character) =>
-    character.name.toLocaleLowerCase().includes(searchNameInput.toLocaleLowerCase())
+      character.name
+        .toLocaleLowerCase()
+        .includes(searchNameInput.toLocaleLowerCase())
     )
     .filter(
       (character) => searchSpecie === 'all' || character.specie === searchSpecie
@@ -67,10 +68,10 @@ const App = () => {
           <main className="main">
             <section>
               <Filters
-              handleSearchInput={handleSearchInput}
-              handleSearchSpecie={handleSearchSpecie}
-              inputValue={searchNameInput}
-              selectValue={searchSpecie}
+                handleSearchInput={handleSearchInput}
+                handleSearchSpecie={handleSearchSpecie}
+                inputValue={searchNameInput}
+                selectValue={searchSpecie}
               />
             </section>
             <section className="main__section">
@@ -79,7 +80,7 @@ const App = () => {
           </main>
         </Route>
         <Route>
-          <PageError/>
+          <PageError />
         </Route>
       </Switch>
       <Footer />

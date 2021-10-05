@@ -1,17 +1,17 @@
 @import 'core/reset';
 @import 'core/variables';
 .footer {
-    margin-left: 10px;
-    margin-right: 10px;
-    min-height: 5vh;
-    font-size: 14px;
-    font-weight: 500;
-    color: $greenrick;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    @media all and (min-width: 768px) {
+  margin-left: 10px;
+  margin-right: 10px;
+  min-height: 5vh;
+  font-size: 14px;
+  font-weight: 500;
+  color: $greenrick;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media all and (min-width: 768px) {
     font-size: 18px;
-    }
   }
+}

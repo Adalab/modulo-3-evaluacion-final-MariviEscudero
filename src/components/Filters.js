@@ -4,17 +4,17 @@ import '../styles/Filters.scss';
 
 const Filters = (props) => {
   return (
-    <form className="main__form" action="">
+    <form className="main__form">
       <FilterByName
         className={'main__form--input'}
-        inputName={"name"}
-        id={"name"}
+        inputName={'name'}
+        id={'name'}
         placeHolder={'buscar personaje'}
         value={props.inputValue}
         handleSearchInput={props.handleSearchInput}
       />
       <FilterBySpecie
-        className={"main__form--select"}
+        className={'main__form--select'}
         name={'specie'}
         id={'specie'}
         value={props.selectValue}
