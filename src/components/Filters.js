@@ -7,7 +7,7 @@ const Filters = (props) => {
     <form className="main__form" action="">
       <FilterByName
         className={'main__form--input'}
-        name={"name"}
+        inputName={"name"}
         id={"name"}
         placeHolder={'buscar personaje'}
         value={props.inputValue}

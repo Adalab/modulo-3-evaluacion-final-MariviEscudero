@@ -12,7 +12,7 @@ const FilterByName = (props) =>{
             className={props.className}
             name={props.inputName}
             id={props.id}
-            placeholder={props.placeholder}
+            placeholder={props.placeHolder}
             value={props.value}
             onChange={filterCharacter}
           />
