@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const CharacterItem = (props) => {
   return (
     <>
-      <Link to={`/characterDetail/${props.characterData.id}`}>
+      <Link to={`/characterDetail/${props.characterData.id}`} className="link">
         <img
           className="main__section--list__item--image"
           src={props.characterData.image}

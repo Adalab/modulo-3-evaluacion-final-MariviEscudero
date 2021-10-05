@@ -10,14 +10,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &--image {
+      width: 200px;
+      height: 200px;
+    }
+    &--name {
+      font-weight: 400;
+      font-size: 18px;
+      margin: 5px 0px;
+    }
    
   }
-  
-  .main__section--list__item--image {
-    width: 200px;
-    height: 200px;
-  }
-  .main__section--list__item--name {
-    font-size: 18px;
-    margin: 5px;
-  }
+.link{
+  color: $greenrick;
+}

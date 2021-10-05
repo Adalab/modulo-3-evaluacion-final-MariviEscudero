@@ -10,14 +10,22 @@ import Header from './Header';
 import Filters from './Filters';
 
 const App = () => {
+
+  //variables de estado
+
   const [characters, setCharacters] = useState([]);
   const [searchNameInput, setSearchNameInput] = useState('');
   const [searchSpecie, setSearchSpecie] = useState('all');
+
+  //datos Api
+
   useEffect(() => {
     getCharactersFromApi().then((initialData) => {
       setCharacters(initialData);
     });
   }, []);
+
+  //router ruta detaildata
 
   const routeData = useRouteMatch('/characterDetail/:id');
   const characterId = routeData !== null ? routeData.params.id : '';
@@ -25,13 +33,21 @@ const App = () => {
   const selectedCharacter = characters.find(
     (character) => parseInt(character.id) === parseInt(characterId)
   );
+
+  //controlar input buscar por nombre
+
   const handleSearchInput = (value) => {
     setSearchNameInput(value);
   };
+
+  // controlar select
+
   const handleSearchSpecie = (value) => {
     setSearchSpecie(value);
   };
- 
+
+ //filtros
+
   const filteredCharacter = characters
     .filter((character) =>
     character.name.toLocaleLowerCase().includes(searchNameInput.toLocaleLowerCase())

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 const CharacterDetail = (props) => {
   const statusIcon = () => {
     if (props.detailData.status === 'Dead') {
-      return (<spam>&#128128;</spam>);
+      return (<spam> &#128128; </spam>);
     } else {
       return 'Sigue vivo';
     }
   };
   const specieIcon = () => {
     if (props.detailData.specie === 'Alien') {
-      return (<spam>&#128126;</spam>);
+      return (<spam> &#128126; </spam>);
     } else {
       return 'Humano o clon humano, quién sabe ya...';
     }
