@@ -64,7 +64,7 @@ const App = () => {
           </main>
         </Route>
         <Route>
-          <PageError />
+          <PageError/>
         </Route>
       </Switch>
       <Footer />

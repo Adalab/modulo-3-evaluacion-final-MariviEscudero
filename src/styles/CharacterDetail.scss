@@ -24,20 +24,11 @@
     margin-left: 100px;
   }
 
-  .icon {
+  .link {
     color: $bluemorty;
     position: relative;
-    transform: translateX(120px) translateY(-5px);
-    @media all and (min-width: 768px) {
-      position: relative;
-      transform: translateX(-5px) translateY(-165px);
-    }
-    @media all and (min-width: 1024px) {
-      position: relative;
-      transform:  translateY(-220px);
-      font-size: 20px;
-    }
   }
+    
   .main__section--detail__name {
     font-size: 20px;
     @media all and (min-width: 768px) {
