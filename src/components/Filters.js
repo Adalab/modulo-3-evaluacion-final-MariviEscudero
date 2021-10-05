@@ -6,12 +6,19 @@ const Filters = (props) => {
   return (
     <form className="main__form" action="">
       <FilterByName
-        handleSearchInput={props.handleSearchInput}
+        className={'main__form--input'}
+        name={"name"}
+        id={'name'}
+        placeHolder={'buscar personaje'}
         value={props.inputValue}
+        handleSearchInput={props.handleSearchInput}
       />
       <FilterBySpecie
-        handleSearchSpecie={props.handleSearchSpecie}
+        className={"main__form--select"}
+        name={'specie'}
+        id={'specie'}
         value={props.selectValue}
+        handleSearchSpecie={props.handleSearchSpecie}
       />
     </form>
   );

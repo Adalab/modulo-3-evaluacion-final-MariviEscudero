@@ -1,20 +1,27 @@
 import '../styles/FilterByName.scss';
-const CharacterFilter = (props) =>{
+const FilterByName = (props) =>{
     const filterCharacter = (ev)=>{
       ev.preventDefault();
         props.handleSearchInput(ev.currentTarget.value)
     }
     return(
        <div>
-          <label className="main__form--label" htmlFor="name">Nombre</label>
+          <label className="main__form--label" htmlFor={props.name}>Nombre</label>
           <input
-            className="main__form--input"
-            type="text"
-            placeholder="Buscar personaje"
+           
+            className={props.className}
+            name={props.inputName}
+            id={props.id}
+            placeholder={props.placeholder}
             value={props.value}
             onChange={filterCharacter}
           />
         </div>
     );
+  
 }
-export default CharacterFilter;
+FilterByName.defaultProps = {
+  inputType: 'text',
+  require: false
+}
+export default FilterByName;

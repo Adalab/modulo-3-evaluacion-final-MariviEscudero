@@ -7,12 +7,12 @@ function FilterBySpecie(props) {
    
     return (
       <div className="display">
-        <label className="main__form--label" htmlFor="specie">
+        <label className="main__form--label" htmlFor={props.name}>
           Especie </label>
         <select
-          className="main__form--select"
-          name="specie"
-          id="specie"
+          className={props.className}
+          name={props.name}
+          id={props.id}
           value={props.value}
           onChange={handleSearchSpecie}
         >
