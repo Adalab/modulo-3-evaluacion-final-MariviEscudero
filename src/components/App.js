@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import getCharactersFromApi from '../services/charactersApi';
+import ls from '../services/ls';
 import '../styles/App.scss';
 import CharactersList from './CharactersList';
 import CharacterDetail from './CharacterDetail';
@@ -15,6 +16,7 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
   const [searchNameInput, setSearchNameInput] = useState('');
   const [searchSpecie, setSearchSpecie] = useState('all');
+  let [selectedCharacter, setSelectedCharacter] = useState();
 
   //datos Api
 
@@ -23,15 +25,21 @@ const App = () => {
       setCharacters(initialData);
     });
   }, []);
+  
+  useEffect(() => {
+    ls.set('characterDetail', selectedCharacter);
+    setSelectedCharacter(selectedCharacter);
+  }, [selectedCharacter]);
 
   //router ruta detaildata
 
   const routeData = useRouteMatch('/characterDetail/:id');
   const characterId = routeData !== null ? routeData.params.id : <PageError />;
 
-  const selectedCharacter = characters.find(
+  selectedCharacter = characters.find(
     (character) => parseInt(character.id) === parseInt(characterId)
   );
+  
 
   //controlar input buscar por nombre
 
