@@ -17,7 +17,7 @@ const CharacterDetail = (props) => {
   };
 
   if (props.detailData === undefined) {
-    return <p>Un momento, que ya casi está....</p>;
+   return <p>Un momento, que ya casi está....</p>;
   } else
     return (
       <section className="main__section--detail">

@@ -21,6 +21,17 @@ const App = () => {
   //datos Api
 
   useEffect(() => {
+    if (ls.get('characters', []).length > 0) {
+      setCharacters(ls.get('characters', []));
+    } else {
+      getCharactersFromApi().then((initialData) => {
+        setCharacters(initialData);
+        ls.set('characters', initialData);
+      });
+    }
+  }, []);
+
+{/*} useEffect(() => {
     getCharactersFromApi().then((initialData) => {
       setCharacters(initialData);
     });
@@ -29,7 +40,7 @@ const App = () => {
   useEffect(() => {
     ls.set('characterDetail', selectedCharacter);
     setSelectedCharacter(selectedCharacter);
-  }, [selectedCharacter]);
+  }, [selectedCharacter]);*/}
 
   //router ruta detaildata
 
