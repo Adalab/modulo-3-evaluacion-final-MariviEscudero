@@ -20,6 +20,14 @@ const Filters = (props) => {
         value={props.selectValue}
         handleSearchSpecie={props.handleSearchSpecie}
       />
+       <FilterByName
+        className={'main__form--input'}
+        inputName={'chapters'}
+        id={'chapters'}
+        placeHolder={'buscar por numero de capitulos'}
+        value={props.chapterValue}
+        handleSearchInput={props.handleSearchChapter}
+      />
     </form>
   );
 };

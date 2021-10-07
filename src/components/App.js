@@ -15,6 +15,7 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
   const [searchNameInput, setSearchNameInput] = useState('');
   const [searchSpecie, setSearchSpecie] = useState('all');
+  const [searchChapters, setSearchChapters] = useState(0);
 
   //datos Api
 
@@ -39,6 +40,10 @@ const App = () => {
     setSearchNameInput(value);
   };
 
+  const handleSearchChapter = (value) => {
+    setSearchChapters(value);
+  };
+
   // controlar select
 
   const handleSearchSpecie = (value) => {
@@ -55,7 +60,10 @@ const App = () => {
     )
     .filter(
       (character) => searchSpecie === 'all' || character.specie === searchSpecie
-    );
+    )
+    .filter((character) =>
+    parseInt(searchChapters)===0 || character.episodes === parseInt(searchChapters)
+    )
 
   return (
     <div className="page">
@@ -70,8 +78,10 @@ const App = () => {
               <Filters
                 handleSearchInput={handleSearchInput}
                 handleSearchSpecie={handleSearchSpecie}
+                handleSearchChapter={handleSearchChapter}
                 inputValue={searchNameInput}
                 selectValue={searchSpecie}
+                chapterValue={searchChapters}
               />
             </section>
             <section className="main__section">
