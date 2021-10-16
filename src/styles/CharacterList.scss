@@ -2,10 +2,10 @@
 @import 'core/reset';
 .main__section--list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   overflow: scroll;
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow: hidden;
