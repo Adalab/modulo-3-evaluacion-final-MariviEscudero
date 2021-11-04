@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Awesome Profile Cards
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Rick & Morty Characters Index is a web application that allows you to search by name and filter characters from the series by species, immersing you in their universe.
 
-## Available Scripts
+- Use the filters to search for characters and click on them to get more information.
 
-In the project directory, you can run:
+- Try it, works in all devices!
 
-### `npm start`
+## Starting 🚀
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites 📋
 
-### `npm test`
+What do you need to install the software?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+You need to have installed Node JS
+```
 
-### `npm run build`
+###  Installation 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Download this repository in zip or clone the repository on your device (if you clone the repository, note that you will not be able to add your commits).
+2. Open a terminal in the root folder of your repository.
+3. Install the local dependencies by running the command in the terminal:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Starting the project ⚙️
 
-### `npm run eject`
+Once you have done the previous step, **start the project every time you work on it**. To do this, run the command:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Then you can see that:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- A window will open in your pre-finished browser, which will display your website.
+- The files you will be working on are inside the `src/` folder.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Publish the project on GitHub Pages 📚
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Enter the command
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm run guthubpages
+```
 
-### Code Splitting
+And then:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Go to the settings tab of your repo
+3. In the GitHub Pages section activate the **master branch/docs folder** option.
 
-### Analyzing the Bundle Size
+## Built with 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- HTML
+- SASS
+- React
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licence 📄
 
-### Advanced Configuration
+This project is licensed under the MIT License MIT License see the [LICENSE](LICENSE) file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Gracias 🎁 / Thanks 🎁
 
-### Deployment
+- Thanks to the teachers of Adalab https://adalab.es/ ![logo-adalab](https://user-images.githubusercontent.com/86961323/140316793-d73dd5de-d06b-4da3-ac99-a7a54372ca20.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
